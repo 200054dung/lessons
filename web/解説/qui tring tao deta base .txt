@@ -1,0 +1,69 @@
+qui trình thực hiện : 
+cd 
+ls Desktop/ : cho nó vào desktop
+cd Desktop/ : hiện đang ở màn hình cd desktop
+ls :   kiểm tra
+cd JavaFX : cho nó vào file JavaFX
+pwd : kiểm tra lưu
+ls : kiểm tra
+
+
+(
+lệnh khởi động chạy trên Git Bash : ( chỉ dẫn cho máy tính biết nơi mình để bản chuẩn bị chạy java )
+ cd
+pwd
+ cd ..
+pwd
+ cd ..
+pwd
+ls ( " ls "và " ls -a "nghĩa là hiện thị phần phía trên ở trên file mình đang bấm )
+cd pleiades
+pwd
+ls
+cd java
+pwd
+ls
+cd 8
+pwd
+ls
+cd bin
+pwd
+ls
+javac は、/c/pleiades/java/8/bin/javac.exe
+javaは,/c/pleiades/java/8/bin/java.exe
+)
+
+
+ touch .bash_profile
+ ls .bash*
+kiểm tra kết quả
+ls 
+ls -a
+alias javac='/c/pleiades/java/8/bin/javac'
+alias java='/c/pleiades/java/8/bin/java'
+alias javac='/c/pleiades/java/8/bin/javac.exe'
+alias java='/c/pleiades/java/8/bin/java.exe'
+
+ 
+ source .bash_profile : nghĩa là hãy đọc cái đó đi
+javac -version
+java -version
+ bây giờ thì bỏ nó vào file mình để ở ngoài
+cd
+cd desktop
+cd JavaFX
+ls
+
+javac Tên.java
+java Tên
+
+
+
+( nếu có tiếng Nhật trong văn bản thì  bâm chuột phải trên thanh GIT , chọn mục Text , chọn thanh Charater set rôi chọn SJIS, thanh local cạnh thì ja_jp
+javac Tên.java -encoding utf8
+java Tên )
+
+
+alias javac='/c/pleiades/java/8/bin/javac'
+     alias java='/c/pleiades/java/8/bin/java'
+ 

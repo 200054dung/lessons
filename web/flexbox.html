@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flexbox</title>
+	<meta charset="utf-8">
+	<style>
+		div{
+			background-color:palegreen;
+			border-radius:10px;
+			margin-bottom:2px;
+		}
+		.a{
+			display:grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 100px 100px ;
+			grid-gap: 10px;
+		}
+		.a> div{
+			flex:1;
+		}
+	</style>
+
+</head>
+<body>
+	<h1>flexbox</h1>
+	<div class="a" >
+	<div>1:▁ ▂ ▄ ▅ ▆ ▇ █ itachi █ ▇ ▆ ▅ ▄ ▂ ▁</div>
+	<div>2:░▒▓█ sasuke █▓▒░</div>
+	<div>3:➶➶➶➶➶ naruto ➷➷➷➷➷</div>
+	<div>4:▀▄▀▄▀▄ sakura ▄▀▄▀▄▀</div>
+	<div>5:╚»★«╝ kakashi ╚»★«╝</div>
+	</div>
+
+</body>
+</html>

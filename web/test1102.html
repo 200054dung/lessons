@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test1102</title>
+	<meta charset="utf-8">
+	<style>
+		table,td,th {
+			border: solid 1px black;
+		}
+		.a{
+			background-color: blue;
+			color:white;
+		}
+		.b{
+			background-color:lightgreen;
+			color:black;
+		}
+		#gridWrapper{
+			display: grid;
+     	　　	grid-template-columns: 1fr 1fr 1fr;
+    		grid-template-rows:100px 100px;
+     		grid-gap: 10px;
+     	}
+		#gridWrapper> div {
+			background-color: pink;
+		}
+
+	</style>
+</head>
+<body>
+
+<h1>先週の復習</h1>
+テーブル
+<hr>
+
+
+<table>
+	 <caption>テーブルの説明</caption>
+	 <thead>
+	 	<tbody>
+	 	<tr>
+	 		<th>ID</th>
+	 		<th>名前</th>
+	 	</tr>
+	 	<tr>
+	 		<td class = "a">@yt</td>
+	 		<td>吉野</td>
+	 	</tr>
+	 	<tr>
+	 		<td class ="b">@tanaka</td>
+	 		<td>田中</td>
+
+	 	</tr>
+	 </thead>
+	 </tbody>
+</table>
+
+<hr>
+grid
+<div id="gridWrapper">
+	<div>1:grape</div>
+	<div>2:apple</div>
+	<div>3:pear</div>
+	<div>4:banana</div>
+	<div>5:orange</div>
+	<div>6:persimom</div>
+</div>
+
+</body>
+</html>

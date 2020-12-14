@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>table</title>
+	<meta charset="utf-8">
+	<style>
+		table{
+			border:solid 1px black;
+		}
+		td{
+			border:solid 1px black;
+		}
+		.grape{
+			background-color:	#40E0D0;
+			color:white;
+
+		}
+	</style>
+
+</head>
+<body>
+	<h1 class = "grape">table</h1>
+
+	<hr>
+ <!--表;table-->
+
+	<table>
+		<caption>テーブルの∀ſNIN</caption>
+		<thead>
+			<tr>
+				<th> ∀ſNIN</th>{th la khu vuc nay se ko dong khung}
+				<th> ∀ſNIN</th>
+				<th> ∀ſNIN</th>
+			</tr>
+		</thead>
+		<tbody>
+		<tr>         <!--tr:table row -->
+			<td>ǝןdd∀</td>  <!--tr:table deta -->{td la ku vuc nay se dc dong khung}
+			<td class = "grape">ǝʞnsɐs</td>
+			<td>oʇnɹɐu</td>
+		</tr>
+		<tr>         <!--tr:table row -->
+			<td>ǝןdd∀</td>  <!--tr:table deta -->
+			<td class = "grape">ǝʞnsɐs</td>
+			<td>oʇnɹɐu</td>
+		</tr>
+	</tbody>
+
+	</table>
+
+</body>
+</html>

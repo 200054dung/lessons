@@ -1,0 +1,69 @@
+
+ <!doctype html>
+　 <html>
+　 　<head>	
+　 　  <title>うどwebページ</title>
+　   　<meta charset="utf-8">
+       <style>
+        div {  // tao khung 
+           background-color:aqua;mau khung 
+           width:100px;rong 
+           height:80px;dai
+            } 
+       <style> 
+        body { 
+           background-color: tomato;//  phong mau trang
+           color:while ;// mau  chu
+             }
+         h1 {
+           background-color:marineblue; // mau trang 
+　   </head>
+    <body>
+　   	<h1>ok!!!</h1>//見出し
+　  	<h2>ok fine </h2>//見出し
+　  	<hr>// 水平線(horizon)
+　 　  <img src="sounyan.jpg" alt="相鉄線のキャラクターそうにゃん">  //alt: alternative ( ほかの、かわりの、代替 ）
+      <img src="duke.ipg" alt ="java のマスコットキャラクタ duke">
+     <p>`段落・文章
+      paragraph
+      Dummy van  ban gia mao
+       https://www.lipsum.com/
+      code:html
+       <p>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eros erat, tincidunt nec dolor eget, volutpat auctor arcu. Aliquam turpis leo, finibus vel ex sed, vestibulum faucibus libero.
+       </p>
+     `<a>`リンク ( a; anchor )// tao link 
+      [Google https://google.com]
+       `href`: hyper refference
+      code:html
+       <a href="https://google.com" Google</a>
+       
+       Apple
+         <a href="https://www.apple.com/jp/">Apple</a>
+ code:html
+  <ul>  // `<ul>`リスト( un-ordered )//箇条書き `un-orderd`: `ordered`じゃない。順番、数字がついてないリスト(tao list)
+  `un-orderd`: `ordered`じゃない。順番、数字がついてないリスト
+    <li>つけめん</li>
+    <li>みそラーメン</li>
+    <li>とんこつラーメン</li>
+    <li>ざるそば</li>
+  </ul>　
+  
+
+`<ol>`リスト( ordered )
+ 箇条書き
+ `orderd`: 順番、数字つきリスト
+ code:html
+  <ol>
+    <li>つけめん</li>
+    <li>みそラーメン</li>
+    <li>とんこつラーメン</li>
+    <li>ざるそば</li>
+  </ol>
+       
+    </body>
+  </html>
+
+
+
+ctrl shit

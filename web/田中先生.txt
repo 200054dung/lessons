@@ -1,0 +1,25 @@
+リボンあり
+　　（　機能）thanh cong cu
+　イラスト（illustrator）：tranh anh minh hoa
+
+tinh  tich phan y=f(x)=X^n   chu y so nguyen(定数） doisang tich phan se bang 0
+
+vd y = aX^n   y' = a nhan n x X^n-1
+
+
+偏微分（Phương trình vi phân riêng phần）
+
+
+
+(∂ｆ(x,y))/∂x=fx(x,y)=f^' (x,y)=
+
+f_x^' (x,y)=2x^2+3y^3+5 = 4x      chu y( 3y^3+5) nhin nhan no la 定数 =.> 0 になる。
+
+(2x^2 を注目する)
+
+(∂ｆ(x,y))/∂y=fx(x,y)=f^' (x,y)=
+
+f_y^' (x,y)=2x^2+3y^3+5=9y^2　 chu y (2x^2 vs 5 ) nhin nhan no la 定数 =.> 0 になる。
+
+
+
