@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jscript test</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>jscript</h1>
+	<hr>
+	 <form>
+         <input  id ="data" type="text" name="id">
+         <input type="button" value="click me" onclick="hello();">
+       </form>
+       <hr>
+       <button>COLOR!</button>
+       <script>
+         function hello() {
+           alert( 'ALOHA!' );
+           const msg =document.getElementById('data').value;
+           alert(msg);
+       }
+       const btn = document.querySelector('button');
+       function random(number) {
+       	return Math.floor(Math.random()*(number+1));
+       }
+       btn.onclick = function(){
+       	const rndCol ='rgb('+random(255)+','+random(255)+','+random(255)+')';
+       	document.body.styte.backgroundColor=rndCol;
+       }
+
+       </script>
+
+</body>
+</html>
