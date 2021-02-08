@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Naruto</title>
+	<meta charset="utf-8">
+	<style type="text/css"></style>
+	<style>
+		h1{
+			color:violet;
+		}
+		p{
+			color: blue;
+		}
+		ol{
+			color:gold;
+		}
+		ul{
+			color:green;
+		}
+		h1{
+			font-family:cursive;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Naruto</h1>
+	2021年1月18日月曜日
+	<h2>JQuery</h2>
+	<p id ="mondai">ナルトはどこに住んでいますか？</p>
+	<hr>
+	<ol>
+		<li id ="na" >ナルト</li>
+		<li id ="sa">サスケ</li>
+		<li id ="ka">カカシ</li>
+		<li id ="sak">サクラ</li>
+	</ol>
+	<ul>
+		<li id ="na2" >ナルト</li>
+		<li id ="sa2" >サスケ</li>
+		<li id ="ka2" >カカシ</li>
+		<li id ="sak2" >サクラ</li>
+	</ul>
+	<p>narutoは木葉の忍者です。まだ少年ですがナルトは一番最強忍者です。</p>
+	<form>
+		ID:<input type="text" name="id"><br>
+		パスワード:<input type="password" name="password"><br>
+		日付	:<input type="date" name="date"><br>
+		<button>Ok</button>
+	</form>
+	<img src="anh/na.jpg" width= 300>
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+		
+			$("#na").on("click", function(){
+            $("#na").css("color", "orange");
+   });
+			$("#sa").on("click", function(){
+            $("#sa").css("color", "black");
+   });
+			$("#ka").on("click", function(){
+            $("#ka").css("color", "lightgrey");
+   });
+			$("#sak").on("click", function(){
+            $("#sak").css("color", "pink");
+   });
+		     $("#sa2").on("click", function(){
+             $("#sa2").text("佐助");
+   });
+		     $("#na2").on("click", function(){
+             $("#na2").text("鳴門");
+   });
+		     $("#ka2").on("click", function(){
+             $("#ka2").text("案山子");
+   });
+		     $("#sak2").on("click", function(){
+             $("#sak2").text("桜");
+   });
+		     $("#mondai").on("click",function(){
+             $("#mondai").text("木葉");
+    });
+
+　  });
+		
+	</script>
+
+
+</body>
+</html>

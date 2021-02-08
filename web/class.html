@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>remove class</title>
+	<meta charset="utf-8">
+	<style>
+		.blue{
+			color:blue;
+		}
+		.lagre{
+			font-size: 40px;
+		}
+	</style>
+</head>
+<body>
+<h1>add/remove class</h1>
+<hr>
+<button id ="blue">BLUE</button>
+<button id="lagre">LAGRE</button>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(function(){
+		let blueFlag = 0
+		let lagreFlag = 0
+		$("#blue").on("click",function(){
+			if(blue==0){
+			$(this).addClass("blue")
+			blue = 1
+		}else{
+			$(this).removeClass("blue")
+			blue = 0
+		}
+	})
+		$("#lagre").on("click",function(){
+			if(lagre==0){
+			$("h1").addClass("lagre")
+			lagre = 1
+		}else{
+			$("h1").removeClass("lagre")
+			lagre = 0
+		}
+	});
+})
+</script>
+</body>
+</html>

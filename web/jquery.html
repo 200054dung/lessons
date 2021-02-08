@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery:seletor</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<hr>
+<ul>
+	<li>バナナ</li>
+	<li>イチゴ</li>
+	<li>りんご</li>
+	<li>ぶどう</li>
+</ul>
+<h2>最後の番目、色を変える</h2>
+<hr>
+<h3>偶数は番目だけ(even),色を変える</h3>
+<ul>
+  		<li>バナナ</li>
+  		<li>ぶどう</li>
+  		<li>りんご</li>
+  		<li>いちご</li>
+  		<li>くり</li>
+  		<li>なし</li>
+  	</ul>
+<button>click me </button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	  $(function(){
+  	    // $('li:last-child').css('color', 'tomato');
+  	     $('li:even').css('color', 'tomato');
+  	  })
+</script>
+</body>
+</html>

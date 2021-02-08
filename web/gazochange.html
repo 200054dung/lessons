@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gazo CHANGE</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>gazo CHANGE</h1>
+	<button id = "naruto">naruto</button>
+	<button id = "sasuke">sasuke</button>
+	<button id = "color"> COLOR </button>
+ <h1>木葉の火影は誰か</h1>
+<hr>
+<img src="anh/jaa.jpg">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">></script>
+	<script>
+		$(function(){
+	$('#sasuke').on('click',function(){
+		$('h1').text('no');
+		$('img').attr('src','anh/sasuke.jpg');
+		  });
+	$('#naruto').on('click',function(){
+		$('h1').text('yes');
+	$('img').attr('src','anh/nas.jpg');
+            });
+    })
+		function(){
+       const btn = document.querySelector('#color');
+       function random(number){
+       	return Math.floor(Math.random()*(number+1));
+       }
+       btn.onclick = function(){
+       	const rndCol =' rgb('+random(255)+','+random(255)+','+random(255)+')';
+       	document.body.styte.backgroundColor= rndCol ;
+       }
+	</script>
+		
+</body>
+</html>

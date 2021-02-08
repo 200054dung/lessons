@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>doi chu</title>
+	<meta charset="utf-8">
+	<img src="anh/na.jpg" width="300">
+	<h2>hello</h2>
+	<style>
+		.violet{
+			color:violet;
+		}
+	</style>
+<body>
+	<h1>1</h1>
+<ul>
+	<li>apple</li>
+	<li>banana</li>
+	<li>orange</li>
+</ul>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">></script>
+<script>
+	$(function(){
+		let apple=1;
+		const fruits =[
+		"apple",
+		"banana",
+		"orange"
+		];
+		$("li").on("click",function(){
+			if(apple == 1){
+			$(this).text("aloha").addClass("violet");
+			apple = 0;
+		}else{
+			const num = $(this).index();
+			$(this).text(fruits[num]).removeClass("violet");
+			apple = 1;
+		}
+
+		});
+		$("body").on("mousemove",function(e){
+			$("h1").text(e.clientX);
+		});
+		const gazofiles =["anh/na.jpg","anh/sasuke.jpg",
+		"anh/lu.jpg","anh/zoro.png"];
+		const helo=["hello","hi","aloha","good morning"];
+		let num=0;
+		$("img").on("wheel",function(){
+			num++
+			if(num>=gazofiles.length){
+				num=0;
+			}
+				$("img").attr("src",gazofiles[num]);
+				$("h2").text(helo[num]);
+
+		});
+	})
+</script>
+</body>
+</html>

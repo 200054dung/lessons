@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>明日何曜日ですか？？</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<button id ="wednesday">水曜日</button>
+	<button id="tuesday">火曜日</button>
+	<h1>明日何曜日ですか？？？</h1>
+	<hr>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">></script>
+	<script>
+	$(function(){
+	$('#wednesday').on('click',function(){
+		$('h1').text('違います');
+		  });
+	$('#tuesday').on('click',function(){
+	$('h1').text('正しい');
+            });
+    })
+	</script>
+</body>
+</html>

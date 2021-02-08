@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LIST</title>
+	<meta charset="utf-8">
+	<style>
+		.red{
+			color:red;
+		}
+		.blue{
+			color:blue;
+		}
+		.lagre{
+			font-size:50px;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<caption>SAKANA</caption>
+		<thead>
+			<tr class="tr">
+				<th>ぶり </th>
+				<th> 鰤</th>
+			</tr>
+			<tr class="tr">	
+				<th>はまち</th>
+				<th>魬</th>
+			</tr>
+			<tr class="tr">	
+				<th>マグロ</th>
+				<th>鮪</th>
+			</tr>
+			<tr class="tr">	
+				<th>タイ</th>
+				<th>鯛</th>
+			</tr>
+			<tr class="tr">	
+				<th>こばた</th>
+				<th>小鰭</th>
+			</tr>
+		</thead>
+	</table>
+	<ul>
+		<li>ぶり</li>
+		<li>サーモン</li>
+		<li class="red">マグロ</li>
+		<li>はまち</li>
+		<li>こばた</li>
+	</ul>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">></script>
+	<script>
+		$(function(){
+			$("tr").on("click",function(){
+				$(this).addClass("lagre")
+			})
+			$("tr").on("click",function(){
+				$(this).addClass("blue")
+			})
+			$("tr").on("click",function(){
+				$(this).hide("tr")
+			})
+		})
+			
+	</script>
+
+</body>
+</html>

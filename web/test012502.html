@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>画像を変更する</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>画像を変更する</h1>
+	<hr>
+<img src="anh/na.jpg" width=300>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(function(){
+	const  gazofiles =[
+	'anh/na.jpg',   
+	'anh/sasuke.jpg',
+	'anh/lu.jpg',
+	'anh/zoro.png',
+	'anh/000.jpg'
+
+	]
+
+		let num=0;
+	$("img").on("mouseout",function(){//wheel la gugu xoay con chuot
+		//mouse over dua chuot ra ngoai
+		num++
+ 	$("img").attr("src",gazofiles[num]);
+ 	if(num>=gazofiles.length){
+		num=0;
+	$("img").attr("src",gazofiles[num]);
+}
+ });
+})
+	// dau "/"la ghi  ngan gon dia chi cua anh "\"la phai ghi day du tat ca
+	
+</script>
+</body>
+</html>

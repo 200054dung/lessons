@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>クイズ</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>クイズ</h1>
+問題文をクリックすると,正解が表示される。
+<hr>
+<p id="p">
+「馬場」の名前は発音は何ですか？
+</p>
+<p id="p1">今日のランチは何を食べたい？</p>
+<img src="anh/sasuke.jpg">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script>
+ 	$(function(){
+ $("#p").on("click",function(){
+ $("#p").text("ばば");
+});
+ $("#p1").on("click",function(){
+ $("#p1").text("pizza を食べたい");
+});
+ $("h1").on("click",function(){
+ $("h1").hide("slow");
+});
+ let num =1;
+ $("img").on("click",function(){
+ 	if(num==1){
+ 	$("img").attr("src","anh/na.jpg");
+ 	num=2;
+ }else{
+    $("img").attr("src","anh/sasuke.jpg");
+num=1;
+}
+ });
+})
+ </script>
+</body>
+</html>

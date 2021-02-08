@@ -14,18 +14,18 @@
        <hr>
        <button>COLOR!</button>
        <script>
-         function hello() {
+         function hello(){
            alert( 'ALOHA!' );
-           const msg =document.getElementById('data').value;
-           alert(msg);
+          const msg =document.getElementById('data').value;
+            alert(msg);
        }
        const btn = document.querySelector('button');
-       function random(number) {
+       function random(number){
        	return Math.floor(Math.random()*(number+1));
        }
        btn.onclick = function(){
-       	const rndCol ='rgb('+random(255)+','+random(255)+','+random(255)+')';
-       	document.body.styte.backgroundColor=rndCol;
+       	const rndCol =' rgb('+random(255)+','+random(255)+','+random(255)+')';
+       	document.body.styte.backgroundColor= rndCol ;
        }
 
        </script>
