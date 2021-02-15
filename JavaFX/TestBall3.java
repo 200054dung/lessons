@@ -8,6 +8,7 @@ import javafx.scene.paint.Color;
 import javafx.animation.AnimationTimer;
 import javafx.scene.input.KeyEvent;
 import javafx.event.EventHandler;
+import javafx.scene.input.KeyCode;
 
 public class TestBall3 extends Application{
    private BreakoutThread breakoutthread;
@@ -28,12 +29,11 @@ public class TestBall3 extends Application{
       scene.setOnKeyPressed(
          new EventHandler<KeyEvent>(){
             public void handle(KeyEvent e){
-               System.out.println(e.getCode());
+               key.keyPressed(e);
             }
          }
          );
-      stage.show();
-   
+      stage.show();  
    }
 }
 class BreakoutThread extends AnimationTimer{
@@ -52,6 +52,7 @@ class BreakoutThread extends AnimationTimer{
       ball.draw(gc);
       ball.move();
       bar.draw(gc);
+      bar.move();
    }
 }
 class Ball{
@@ -101,6 +102,7 @@ class Key{
          right=true;
       }
    }
+}
 class Bar{
  private int x;
  private int y;
@@ -108,6 +110,7 @@ class Bar{
  private int h;
  private int x_speed;
  private int y_speed;
+ private Key key;
 
  public Bar(){
    this.x=50;
@@ -119,4 +122,12 @@ class Bar{
    gc.setFill(Color.BLACK);
    gc.fillRect(x,y,w,h);
  } 
+ public Bar(Key key){
+   this.key =key;
+ }
+ public void move(){
+   if(key.right==true){
+      x+= x_speed;
+   }
+ }
 }
