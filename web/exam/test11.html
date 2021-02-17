@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>remove class</title>
+	<title>test11</title>
 	<meta charset="utf-8">
 	<style>
-		.blue{
+		.red{
 			color:red;
 		}
-		.lagre{
+		.blue{
 			color:blue;
 		}
 		.green{
@@ -18,41 +18,29 @@
 <body>
 <h1>test11</h1>
 <hr>
-<button id ="blue">BTN1</button>
-<button id="lagre">BTN2</button>
+<button id ="a">BTN1</button>
+<button id="b">BTN2</button>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 	$(function(){
-		let blueFlag = 0
-		let lagreFlag = 0
-		$("#blue").on("click",function(){
-			if(blue==0){
+		let a = 0
+		
+		$("#a").on("click",function(){
+			a++
+			$("h1").addClass("red")
+			a=1
+			})
+		$("#b").on("click",function(){
 			$("h1").addClass("blue")
-			blue = 1
-		}else{
-			$(this).removeClass("blue")
-			blue = 0
-		}
-	})
-		$("#lagre").on("click",function(){
-			if(lagre==0){
-			$("h1").addClass("lagre")
-			lagre = 1
-		}else{
-			$("h1").removeClass("lagre")
-			lagre = 0
-		}
+			if(a>=1){
+
+			}else{
+				$("h1").addClass("green")
+			}
+
+		})
 	});
-		$("#lagre").on("click",function(){
-			if(lagre==0){
-			$("h1").addClass("green")
-			lagre = 1
-		}else{
-			$("h1").removeClass("green")
-			lagre = 0
-		}
-	});
-})
+			
 </script>
 </body>
 </html>
