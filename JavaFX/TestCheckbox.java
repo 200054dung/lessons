@@ -5,11 +5,11 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.control.CheckBox;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
- public class TestCheckBox extends Application{
+ public class TestCheckbox extends Application{
  	public static void main(String[]args){
  		launch(args);
  	}
- 	@Override 
+ 	@Override
  	public void start(Stage stage)throws Exception{
  		CheckBox check = new CheckBox("checkbox");
 

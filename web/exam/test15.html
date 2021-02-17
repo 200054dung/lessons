@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test5</title>
+	<meta charset="utf-8">
+</head>
+<img id="ig" src="anh1/na3.jpg" width=300>
+<img id="ig1" src="anh1/na4.jpg" width=300>
+<button id ="a">change</button>
+<hr>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">></script>
+	<script>
+		$(function(){
+			const gazo=['anh1/na1.jpg','anh1/na2.jpg']
+			const img =['anh1/na1.jpg','anh1/na2.jpg']
+			let num=0
+			$("#a").on("click",function(){
+				$("#ig").attr("src",img[num])
+
+			})
+
+
+		})
+	</script>
+
+</body>
+</html>

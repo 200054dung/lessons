@@ -5,18 +5,18 @@
 	<meta charset="utf-8">
 </head>
 <body>
-	<img id ="ig1" src="anh1/na1.jpg" width=400>
-	<img id ="ig2" src="anh1/na2.jpg" width =300>
+	<img id ="ig1" src="anh1/na1.jpg" width =200>
+	<img id ="ig2" src="anh1/na2.jpg" width =200>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
 		$(function(){
-			const gazo=['anh1/na1.jpg','anh1/na2.jpg']
-			const img =['anh1/na1.jpg','anh1/na2.jpg']
+			const gazo=['anh1/na3.jpg','anh1/na4.jpg']
+			const img =['anh1/na4.jpg','anh1/na3.jpg']
 			let num = 0
 			$("img").on("click",function(){
 				num++
-				if(num>=gazo.length){
+				if(num>=gazo.length){file:///C:/Users/200054/Desktop/lessons/web/exam/anh1/na1.jpg
 					num=0
 				}
 				$("#ig1").attr("src",gazo[num]);
