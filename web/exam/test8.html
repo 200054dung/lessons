@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Test8</title>
+	<title>Slide show</title>
 	<meta charset="utf-8">
 </head>
 <body>
 <h1>画像を変更する</h1>
 <hr>
-<h2>alo</h2>
+<h2>helo</h2>
 <img src="anh1/na1.jpg" width=300>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 	$(function(){
-		const gazo=['anh1/na1.jpg','anh1/na2.jpg','anh1/na3.jpg','anh1/na4.jpg',]
-		const hello['alo','good morning','hello','happy new year',]
+		const gazo=['anh1/na1.jpg','anh1/na2.jpg','anh1/na3.jpg','anh1/na4.jpg']
+		const helo=["hello","hi","aloha","good morning"];
 			let num=0;
 	$("img").on("click",function(){
+		
 		num++
+ 	$("img").attr("src",gazo[num]);
  	if(num>=gazo.length){
 		num=0;
 	}
 	$("img").attr("src",gazo[num]);
-	$("h2").text(hello[num]);
+	$("h2").text(helo[num]);
+
  });
 	})
 </script>
