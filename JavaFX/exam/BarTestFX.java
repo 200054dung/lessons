@@ -27,15 +27,13 @@ public class BarTestFX extends Application{
 				public void handle(KeyEvent e){
 					key.keyPressed(e);
 				}
-			}
-			);
+			});
 		scene.setOnKeyReleased(
 			new EventHandler<KeyEvent>(){
 				public void handle(KeyEvent e){
 					key.keyReleased(e);
 				}
-			}
-			);
+			});
 
 		Canvas canvas=new Canvas(640,480);
 		GraphicsContext gc =canvas.getGraphicsContext2D();
@@ -53,12 +51,13 @@ class BreakoutThread extends AnimationTimer{
 	//method
 	public BreakoutThread(GraphicsContext gc, Key key){
 		this.gc =gc;
-		ball=new Ball();
-		bar = new Bar(key);
+		this.ball=new Ball(bar);
+		this.bar = new Bar(key);
 
 	}
 	@Override
 	public void handle(long time){
+		//1回ぜんぶ消す
 		gc.clearRect(0,0,640,480);
 		//表示する
 		ball.move();
@@ -73,21 +72,38 @@ class Ball{
 	private int y;
 	private int x_speed;
 	private int y_speed;
+	private int size;
+	private int bar;
 	
 	//method
-	public Ball(){
-		this.x=20;
-		this.y=20;
+	public Ball(Bar bar){
+		this.x=0;
+		this.y=0;
 		this.x_speed=5;
 		this.y_speed=5;
+		this.size=30;
+		this.bar=10;
 	}
 	public void move(){//ball の場所を計算する
 		this.x+=this.x_speed;
 		this.y+=this.y_speed;
+
+		if(x>640-size){
+			x_speed*=-1;
+		}
+		if(y<0){
+			y_speed*=-1;
+		}
+		if(x<0){
+			x_speed*=-1;
+		}
+		if(y>480-size-bar){
+			y_speed*=-1;
+		}
 	}
 	public void draw(GraphicsContext gc ){
 		gc.setFill(Color.BLUE);
-		gc.fillOval(x,y,20,20);//ballを書く
+		gc.fillOval(x,y,size,size);//ballを書く
 	}
 }
 class Key{
@@ -137,10 +153,10 @@ class Bar{
 	private int x_speed;
 
 	public Bar(Key key){
-		this.x=180;
-		this.y =480;
-		this.width=40;
-		this.height=5;
+		this.x=100;
+		this.y =470;
+		this.width=100;
+		this.height=10;
 		this.key=key;
 		this.x_speed=5;
 	}
@@ -149,11 +165,11 @@ class Bar{
 		gc.fillRect(x,y,width,height);//書く
 	}
 	public void move(){
-		if(key.isRightPressed()==true){
+		if(key.isRightPressed() == true){
 			x+=x_speed;
 		}
-		if(key.isLeftPressed()==true){
+		if(key.isLeftPressed() == true){
 			x-=x_speed;
-	}
-}
+		}
+    }
 }
